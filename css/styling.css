@@ -230,17 +230,17 @@ body{
     position: relative;
 }
 
-
 .detail-up{
     height: 4rem;
     width: 15rem;
-    border-left: #000000 solid 0.3rem;
-    color: #393C41;
+    border-left: transparent solid 0.3rem;
+    color: transparent;
     font-size: 1.4rem;
     font-weight: bold;
     padding-left: 1rem;
-    padding-bottom:10rem;
-    margin-left:14rem ;
+    padding-bottom:2rem;
+    margin-left:14rem;
+    transition: all 3s;
 }
 
 .mechanical::before{
@@ -263,24 +263,29 @@ body{
     height: 18rem;
 
 }
-/* .mechanical::after{
-    content: '';
-    position: absolute;
-    height: 50rem;
-    width: 50rem;
-    background-color: #EEEEEE;
-} */
 
 .detail-down{
-    padding-top: 13rem;
+    padding-top: 3rem;
     padding-left: 1rem;
     margin: 3rem 0 3rem 27rem;
-    height: 14rem;
+    height: 2rem;
     width: 20rem;
-    border-left: #000000 solid 0.3rem;
-    color: #393C41;
+    border-left: transparent solid 0.3rem;
+    color: transparent;
     font-size: 1.4rem;
     font-weight: bold;
+    transition: all 3s;
+}
+.mechanical:hover > .detail-up{
+    padding-bottom:10rem;
+    border-color: #000000;
+    color: #393C41;
+}
+.mechanical:hover > .detail-down{
+    height: 14rem;
+    padding-top: 13rem;
+    border-color: #000000;
+    color: #393C41;
 }
 
 .safety{
