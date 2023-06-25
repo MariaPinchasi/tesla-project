@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+@font-face{
+    font-family: gothem;
+    src: url(/Gotham\ Book.otf);
+}
+body{
+    font-family: gothem;
+    width: 135.5rem;
+}
+
+.message::after{
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    border-radius: 1rem;
+    content:'';
+    background: url(/img/message-2-16.ico) no-repeat center center;
+    height: 5rem;
+    width: 5rem;
+    background-color: #393C41;
+    animation: animate1 2s 100 ;
+}
+@keyframes animate1 {
+    0%{
+        background-color: #393C41;
+    }
+    50%{
+        background-color:#ffffff;
+    }
+
+    100%{
+        background-color: #393C41;
+    }
+}
+
+.header{
+    font-weight: 500;
+    background: url(/img/Model-3-Main.png) no-repeat center center/cover;
+    height: 62.4rem;
+    color: #ffffff;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.6rem;
+}
+.navbar ul li{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    /*הם שמו גבולות לספאם פנימי, אני הוספתי לפדינג margin: 0 0.8rem; */
+    padding: 0.4rem 1.6rem;
+    color: #ffffff;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: all 1s;
+    opacity: 0.1;
+}
+.navbar ul li a:hover::after{
+    background-color: black;
+}
+
+.logo{
+    padding: 0.5rem 0 0 3.2rem;
+    width: 31.3rem;
+}
+.logo img{
+    padding: 0 1.6rem;
+    width: 15rem;
+    height: 10rem;
+}
+.navbar-car ul li{
+    padding: 0 0.8rem;
+    width: 72.325rem;
+}
+.navbar-shop ul{
+    padding: 0 3.2rem 0 0;
+}
+
+.container{
+    height: 56.8rem;
+    width: 135.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .head{
+    text-align: center;
+}
+.container .head h1{
+    font-size: 4rem;
+    width: 100%;
+    margin: 4.384rem 0 0;
+    padding: 0 2.4rem;
+}
+.container .head a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #EEEEEE;
+    padding: 1.4rem 2.4rem;
+}
+.container .bottom, .container .bottom .features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .features{
+    width: 54rem;
+    height: 11.8rem;
+    padding: 0 2.4rem;
+    text-align: center;
+}
+.container .bottom .features .bottom-up, .container .bottom .features .bottom-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.features .bottom-up{
+    margin-bottom: 6rem;
+}
+.box{
+    height: 2.6rem;
+    width: 16.4rem;
+}
+.box span{
+    font-size: 2.2rem;
+    padding-left: 0.4rem;
+}
+.box h3{
+    font-size: 2.4rem;
+}
+.box p{
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+}
+.box1 img{
+    display: inline;
+    padding-right: 0.6rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 4rem;
+    width: 23.5rem;
+    text-decoration: none;
+    padding: 0.4rem 2.4rem;
+    border: #ffffff solid 0.3rem;
+    border-radius: 0.4rem;
+}
+.btn-primary{
+    color: #000000;
+    background-color: #ffffff;
+    position: relative;
+}
+.btn-primary::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    transition: all 0.5s;
+}
+.btn-primary:hover::after{
+   background-color: #000000;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+.btn-secondary:hover{
+    background-color: #ffffff;
+    color:#000000 ;
+}
+
+.note{
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.note p{
+    text-align: center;
+    color: #EEEEEE;
+
+}
+.note p a{
+    color: #EEEEEE;
+}
+.mechanical{
+    background: url(/img/model-3-hero-a-desktop.png) no-repeat center center/cover;
+    height: 66rem;
+    width: 100rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+.detail-up{
+    height: 4rem;
+    width: 15rem;
+    border-left: #000000 solid 0.3rem;
+    color: #393C41;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-bottom:10rem;
+    margin-left:14rem ;
+}
+
+.mechanical::before{
+    content: 'Impact Protection';
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    height: 2rem;
+    width: 13rem;
+    border-left: transparent solid 0.3rem;
+    color: transparent;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    transition: all 2s ;
+}
+.mechanical:hover::before{
+    color: #393C41;
+    border-color: #000000;
+    height: 18rem;
+
+}
+/* .mechanical::after{
+    content: '';
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    background-color: #EEEEEE;
+} */
+
+.detail-down{
+    padding-top: 13rem;
+    padding-left: 1rem;
+    margin: 3rem 0 3rem 27rem;
+    height: 14rem;
+    width: 20rem;
+    border-left: #000000 solid 0.3rem;
+    color: #393C41;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.safety{
+    width: 104.1rem;
+    margin: auto;
+}
+.safety-header{
+    height: 9.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.safety-header span{
+    height: 50%;
+    font-size: 2.8rem;
+    font-weight:bold ;
+    color: #171A20;
+    padding: 1.6rem 0 0.8rem;
+    line-height: 3.6px;
+}
+.safety-header p{
+    height: 50%;
+    font-size: 1.4rem;
+    font-weight:400 ;
+    color: #393C41;
+    padding: 1.6rem 0 0rem;
+    line-height: 2rem;
+}
+.safety-header p a{
+    color: #393C41;
+}
+
+.safety-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom:12rem ;
+    
+}
+.safety-content .safety-right , .safety-content .safety-left{
+    width: 50.8rem;
+    height: 7.4rem;
+    font-size: 1.4rem;
+    font-weight:400 ;
+    color: #393C41;
+    padding: 1.6rem 0 0rem;
+    line-height: 2rem;
+
+}
+.map{
+    background: url(/img/Model-3-Range-Hero-map.png) no-repeat center center/cover;
+    width: 135rem;
+    height: 42.8rem;
+    margin-bottom:6rem ;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+.map-side{  
+    padding-left: 6.4rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    height: 38rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.map-side .box{
+    width: 19.8rem;
+    height: 5.4rem;
+}
