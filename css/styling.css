@@ -14,8 +14,11 @@ body{
     font-family: gothem;
     width: 135.5rem;
 }
-
-.message::after{
+.all-container{
+    max-width:135.5rem ;
+    margin: auto;
+}
+.message{
     position: fixed;
     right: 3%;
     bottom: 5%;
