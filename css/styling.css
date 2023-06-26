@@ -12,18 +12,17 @@ html{
 }
 body{
     font-family: gothem;
-    width: 135.5rem;
 }
 .all-container{
-    max-width:135.5rem ;
+    max-width:100% ;
     margin: auto;
 }
+
 .message{
     position: fixed;
     right: 3%;
     bottom: 5%;
     border-radius: 1rem;
-    content:'';
     background: url(/img/message-2-16.ico) no-repeat center center;
     height: 5rem;
     width: 5rem;
@@ -35,6 +34,7 @@ body{
         background-color: #393C41;
     }
     50%{
+        background: url(/img/message-2-16\ grey.ico) no-repeat center center;
         background-color:#ffffff;
     }
 
@@ -108,7 +108,7 @@ body{
 
 .container{
     height: 56.8rem;
-    width: 135.5rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,7 +340,7 @@ body{
 }
 .map{
     background: url(/img/Model-3-Range-Hero-map.png) no-repeat center center/cover;
-    width: 135rem;
+    width: 100%;
     height: 42.8rem;
     margin-bottom:6rem ;
     margin-left: 2rem;
